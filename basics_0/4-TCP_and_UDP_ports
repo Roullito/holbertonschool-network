@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Script pour afficher les ports TCP/UDP actifs
+# Affiche uniquement les sockets en écoute (Internet + UNIX) avec PID/Programme
 
-netstat -tulnp
+netstat -lpn
