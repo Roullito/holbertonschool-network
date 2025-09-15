@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Script pour afficher les ports TCP/UDP actifs
 
-sudo netstat -tuln
+sudo netstat -tulnp
