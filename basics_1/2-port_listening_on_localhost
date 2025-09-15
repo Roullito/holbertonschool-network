@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Script qui écoute sur le port 98 de localhost et affiche ce qui est reçu
+
+nc -l 127.0.0.1 98
