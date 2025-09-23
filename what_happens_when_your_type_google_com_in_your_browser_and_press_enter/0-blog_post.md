@@ -1,6 +1,6 @@
 # What happens when you type `https://www.google.com` and press Enter
 
-*By <Jules MOLEINS>*
+*By Jules MOLEINS*
 
 Recruiters love this question because it reveals how well you understand the full web stack. Below is a concise, end‑to‑end walkthrough that touches the layers you are likely to be asked about: **DNS**, **TCP/IP**, **firewalls**, **HTTPS/TLS**, **load balancers**, **web servers**, **application servers**, and **databases**. I close with a compact diagram you can keep in your head during interviews.
 
