@@ -103,3 +103,6 @@ flowchart TD
   WS --> APP[Application Server]
   APP --> DB[Database]
 ```
+## Blog post
+
+`https://www.linkedin.com/pulse/what-happens-when-you-type-httpswwwgooglecom-press-enter-moleins-s2cpf`
