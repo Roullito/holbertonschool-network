@@ -95,17 +95,11 @@ The diagram below captures the required elements: DNS resolution, TCP 443, encry
 
 ```mermaid
 flowchart TD
-  Browser[Browser] -->|Resolve www.google.com| DNSR[DNS Resolver]
+  Browser[Browser] -->|Resolve domain| DNSR[DNS Resolver]
   DNSR -->|A or AAAA record| Browser
-  Browser -->|TCP 443 HTTPS| FW[Firewall allowing 443]
-  FW --> LB[Load Balancer]
+  Browser -->|TCP 443 HTTPS encrypted| FW[Firewall allows 443]
+  FW -->|allow 443| LB[Load Balancer]
   LB --> WS[Web Server]
   WS --> APP[Application Server]
   APP --> DB[Database]
-  note right of Browser: Encrypted via TLS
 ```
-
----
-
-### If you want me to go deeper…
-For front‑end roles we can expand on parsing, preloading, TLS resumption, H2/H3 multiplexing, or caching headers. For SRE roles we can dive into anycast, BGP, edge POPs, health checks, failover, and observability (SLIs/SLOs).
